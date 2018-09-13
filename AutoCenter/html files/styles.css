@@ -1,0 +1,82 @@
+.ulHTML 
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.liHTML 
+{
+    display: inline;
+}
+
+.carT, .carH, .carD 
+{
+    border: 1px solid black;
+    padding: 5px;
+}
+
+.carT 
+{
+
+    border-spacing: 7px;
+	width:75%;
+}
+
+.carH, .carD
+{ 
+	width:80%;
+}
+
+.center 
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+   
+	
+}
+.carheader
+{
+	
+    margin-top: 0%;
+    
+	
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+.renteT, .renteH, .renteD 
+{
+    border: 1px solid black;
+    padding: 1px;
+	
+}
+
+.renteT
+{
+	width:35%;
+}
+
+.renteH, .renteD
+{ 
+    
+}
+
+#map 
+{
+    height: 400px;
+    width: 60%;  
+}
+
+
+
+

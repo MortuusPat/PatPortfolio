@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>AUTOCENTRUM A/S - Map</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="favicon.ico" />
+  
+</head>
+
+<body>
+
+
+<h1>Map</h1>
+
+<ul align="center" class="ulHTML">
+  <li class="liHTML"> <a href="index.html">Home</a></li>
+  <li class="liHTML"> <a href="links.html">Links</a></li>
+  <li class="liHTML"> <a href="cars.html">Cars</a></li>
+  <li class="liHTML"> <a href="film.html">Video</a></li>
+  <li class="liHTML"> <a href="galleri.html">Gallery</a></li>
+  <li class="liHTML"> <a href="rente.html">Rente</a></li>
+  <li class="liHTML"> <a href="findh.html">Find Holger</a></li>
+  <li class="liHTML"> <a href="ansat.html">Ansatte</a></li>
+  <li class="liHTML"> <a href="sum.html">Sum</a></li>
+  <li class="liHTML"> <a href="map.html">Map</a></li>
+</ul>  
+
+    <div id="map"></div>
+    <script>
+	
+function LavMap() {
+  var uclVejle = {lat: 55.706793, lng: 9.522926};
+  var autocentrum = {lat: 56.918238, lng: 9.188159};
+  var mapS = new google.maps.Map(document.getElementById('map'), {zoom: 7, center: uclVejle});
+  var marker = new google.maps.Marker({position: uclVejle, map: mapS});
+  var marker = new google.maps.Marker({position: autocentrum, map: mapS});
+}
+    </script>
+	
+    <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDbHRYme8Jz68o2lu-sUmITUCGQFjNQ50A&callback=LavMap">
+    </script>
+
+
+
+
+
+
+
+
+
+
+<div class="footer">
+<ul align="center" class="ulHTML">
+  <li class="liHTML"> <a href="index.html">Home</a></li>
+  <li class="liHTML"> <a href="links.html">Links</a></li>
+  <li class="liHTML"> <a href="cars.html">Cars</a></li>
+  <li class="liHTML"> <a href="film.html">Video</a></li>
+  <li class="liHTML"> <a href="galleri.html">Gallery</a></li>
+  <li class="liHTML"> <a href="rente.html">Rente</a></li>
+  <li class="liHTML"> <a href="findh.html">Find Holger</a></li>
+  <li class="liHTML"> <a href="ansat.html">Ansatte</a></li>
+  <li class="liHTML"> <a href="sum.html">Sum</a></li>
+  <li class="liHTML"> <a href="map.html">Map</a></li>
+</ul>
+  <a href="mailto:autocentrum@google.com?subject=Tilmelding%20til%20nyhedsbrevet&body=Jeg%20vil%20gerne%20tilmeldes%20nyhedsbrevet.%0d%0dMit%20navn:%0dMin%20emailaddresse:"><img src="..\pictures\pictogram\mailpictogram.png" alt="mail pictogram" align="left"></a>
+
+</div>
+</body>
+
+
+</html>

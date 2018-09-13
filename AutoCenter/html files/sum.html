@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>AUTOCENTRUM A/S - Sum</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="favicon.ico" />
+  
+</head>
+
+<body>
+
+
+<h1>Sum</h1>
+
+<ul align="center" class="ulHTML">
+  <li class="liHTML"> <a href="index.html">Home</a></li>
+  <li class="liHTML"> <a href="links.html">Links</a></li>
+  <li class="liHTML"> <a href="cars.html">Cars</a></li>
+  <li class="liHTML"> <a href="film.html">Video</a></li>
+  <li class="liHTML"> <a href="galleri.html">Gallery</a></li>
+  <li class="liHTML"> <a href="rente.html">Rente</a></li>
+  <li class="liHTML"> <a href="findh.html">Find Holger</a></li>
+  <li class="liHTML"> <a href="ansat.html">Ansatte</a></li>
+  <li class="liHTML"> <a href="sum.html">Sum</a></li>
+  <li class="liHTML"> <a href="map.html">Map</a></li>
+</ul>  
+
+
+<section>
+
+<form>
+Indtast tal: <input id="ansaetInput" type="number" name="Navn"><br>
+<button type="button" onclick="Gem()">Gem</button>
+</form>
+
+<select id="list1" size="10">
+</select>
+
+<form>
+Sum: <input id="sumOutput" type="number" name="Sum" disabled><br>
+</form>
+
+
+
+
+
+
+</section>
+
+<script>
+
+function Gem()
+{
+	var input = document.getElementById("ansaetInput");
+	var list = document.getElementById("list1")
+	var option = document.createElement("option");
+	option.text = input.value;
+	list.add(option);
+	Sum();
+	
+	
+}
+
+function Sum()
+{
+	var output = document.getElementById("sumOutput");
+	var list = document.getElementById("list1")
+	
+	var sum = 0;
+	for (i = 0; i < list.length; i++)
+	{
+		list.ListIndex = i;
+		var a = parseInt(list.selectedIndex);
+        sum = sum + a;
+	}
+	output.value = sum;
+		
+	
+}
+
+
+
+</script>
+
+
+
+
+
+
+
+
+<div class="footer">
+<ul align="center" class="ulHTML">
+  <li class="liHTML"> <a href="index.html">Home</a></li>
+  <li class="liHTML"> <a href="links.html">Links</a></li>
+  <li class="liHTML"> <a href="cars.html">Cars</a></li>
+  <li class="liHTML"> <a href="film.html">Video</a></li>
+  <li class="liHTML"> <a href="galleri.html">Gallery</a></li>
+  <li class="liHTML"> <a href="rente.html">Rente</a></li>
+  <li class="liHTML"> <a href="findh.html">Find Holger</a></li>
+  <li class="liHTML"> <a href="ansat.html">Ansatte</a></li>
+  <li class="liHTML"> <a href="sum.html">Sum</a></li>
+  <li class="liHTML"> <a href="map.html">Map</a></li>
+</ul>
+  <a href="mailto:autocentrum@google.com?subject=Tilmelding%20til%20nyhedsbrevet&body=Jeg%20vil%20gerne%20tilmeldes%20nyhedsbrevet.%0d%0dMit%20navn:%0dMin%20emailaddresse:"><img src="..\pictures\pictogram\mailpictogram.png" alt="mail pictogram" align="left"></a>
+
+</div>
+</body>
+
+
+</html>
